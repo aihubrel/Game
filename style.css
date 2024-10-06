@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+  }
+  
+  .row{
+    text-align: center;
+  }
+  
+  .container {
+    margin-top: 150px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.901);
+    border-radius: 15px;
+    box-shadow: 3px 3px rgba(255, 247, 0, 0.365), -1em 0 .4em rgba(0, 119, 128, 0.23);
+  }
+  
+  h2 {
+      color: rgba(14, 0, 165, 0.66);
+      font-weight: bold;
+      font-size: 60px;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    }
+  
