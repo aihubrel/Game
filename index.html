@@ -22,14 +22,25 @@
         <div class="col-12 col-xs-4">
           <fieldset>
               <h3>Choose your mode!!!</h3>
+              <div style="display: inline"> 
                 <button class="select" id="plus" name="select" value="+"  onclick="clicked(this.id)" >
-                    +</button>
+                <img src="images/plus.jpg"></button>
+              </div>
+            
+              <div style="display: inline">
                 <button class="select" id="minus" name="select" value="-" onclick="clicked(this.id)" >
-                    -</button>
+                  <img src="images/minus.jpg"></button>
+              </div>
+            
+              <div style="display: inline">
                 <button class="select" id="multiply"  name="select" value="*" onclick="clicked(this.id)" >
-                    *</button>
-                <button class="select" id="divide" name="select" value="/"  onclick="clicked(this.id)">
-                    /</button>
+                  <img src="images/multiply.jpg"></button>
+              </div>
+
+              <div style="display: inline">
+                  <button class="select" id="divide" name="select" value="/"  onclick="clicked(this.id)">
+                    <img src="images/divide.jpg"></button>
+              </div>
             </fieldset>
 
             <h1 class="number" id="num1" style="display: inline"></h1>
@@ -44,7 +55,11 @@
         <div class="col-12 col-xs-4 score">
           <h4>SCORE</h4>
           <p id="score"></p>
+          <p id="hiddenAnswer"></p>
         </div>
+      </div>
+      <div>
+        <button id="reset">Reset the game</button>
       </div>
     </div>
   </body>

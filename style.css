@@ -1,5 +1,9 @@
 body {
     text-align: center;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode:lighten;
   }
   
   .row{
@@ -21,3 +25,72 @@ body {
       text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
   
+  .number {
+      text-align: center;
+    }
+  
+  label {
+      white-space:nowrap;
+  }
+  
+  .wrappable {
+      white-space:normal;
+  }
+  
+  #user-input {
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    font-size: 40px;
+  }
+  
+  #reset {
+    margin-top: 20px;
+  }
+  
+  #hiddenAnswer{
+    display: none;
+  }
+  
+  .time {
+    font-weight: bold;
+  }
+  #time-left{
+    font-size: 150px;
+    color: rgba(43, 141, 226, 0.62);
+  }
+  
+  .score {
+    font-weight: bold;
+  }
+  
+  #score {
+    font-size: 150px;
+    color: rgba(226, 43, 177, 0.62);
+  }
+  
+  .select {
+    background-color: white;
+    border: none;
+  }
+  button img{
+    width: 50px;
+    height: auto;
+  }
+  
+  button img:hover{
+    border: 0.5px rgb(142, 33, 135) solid;
+    border-radius: 2px;
+  }
+  
+  #reset  {
+  background-color: rgb(40, 83, 157);  
+  color: aliceblue;
+  }
+  
+  #timeout{
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: beige;
+    color: cadetblue;
+  }
