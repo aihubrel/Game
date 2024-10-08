@@ -5,6 +5,7 @@ var currentQuestion;
 var interval;
 var timeLeft = 10;
 var score = 0;
+var highScore = 0;
 
 
 $(document).ready(function(){
@@ -115,8 +116,13 @@ function startGame () {
       if (timeLeft === 0) {
         clearInterval(interval);
         interval = undefined;
-        $("#timeout").html("Time Up! <br> Please reset to replay the game.")
+        $("#timeout").html("Time Up! <br> Please select mode or click restart button to play the game again.")
         document.getElementById("user-input").disabled = true;
+        activateButton();
+        if (score > highScore) {  
+            highScore = score;
+            $("#highScore").html(highScore)
+        }
       }
     }, 1000);  
   }
@@ -139,6 +145,27 @@ function disableButton(){
   document.getElementById("divide").disabled = true;
 }
 
+function activateButton(){
+  document.getElementById("plus").disabled = false;
+  document.getElementById("minus").disabled = false;
+  document.getElementById("multiply").disabled = false;
+  document.getElementById("divide").disabled = false;
+}
+
+$(document).ready(function(){
+  $("#restart").click(function(){
+    clearInterval(interval);
+    interval = undefined;
+    $('#user-input').val('');
+    $('#score').text("0");
+    $('#time-left').text("0");
+    $('#num1').text("");  
+    $('#num2').text(""); 
+    $('#equation').text(""); 
+    document.getElementById("user-input").disabled = true;
+    activateButton();
+    })
+})
 
 $(document).ready(function(){
   $("#reset").click(function(){
