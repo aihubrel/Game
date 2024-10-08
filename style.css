@@ -69,6 +69,12 @@ body {
     color: rgba(226, 43, 177, 0.62);
   }
   
+  #highScore{
+    font-weight: bold;
+    font-size: 150px;
+    color: rgba(242, 202, 24, 0.74);
+  }
+
   .select {
     background-color: white;
     border: none;
@@ -83,6 +89,11 @@ body {
     border-radius: 2px;
   }
   
+#restart{
+  background-color: rgb(157, 40, 147);  
+  color: aliceblue;
+}
+
   #reset  {
   background-color: rgb(40, 83, 157);  
   color: aliceblue;
